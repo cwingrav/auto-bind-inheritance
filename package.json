@@ -1,0 +1,21 @@
+{
+  "name": "auto-bind-inheritance",
+  "version": "1.0.0",
+  "description": "Automatically bind methods to their class instance and walks through parent classes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "auto",
+    "bind",
+    "class",
+    "method",
+    "mthods",
+    "instance",
+    "parent",
+    "extends"
+  ],
+  "author": "cwingrav",
+  "license": "MIT"
+}
