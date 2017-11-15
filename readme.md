@@ -1,4 +1,4 @@
-# auto-bind 
+# auto-bind-inheritance
 
 > Automatically bind methods to their class instance and works on parent methods.
 
@@ -28,7 +28,6 @@ class B extends A {
 	constructor() {
 		super();
 		this.val = 'B';
-		autoBindI(this);
 	}
 	method1() { console.log('B.method1 ', this.val); }
 }
@@ -59,8 +58,8 @@ mb2();
 // With `autoBindI(this)`, the above would have resulted in
 //=> 'B.method1  B'
 //=> 'A.method2  B'
-//=> 'method1'
-//=> 'method2'
+//=> 'bound method1'
+//=> 'bound method2'
 //=> 'B.method1  B'
 //=> 'A.method2  B'
 
