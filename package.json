@@ -1,6 +1,6 @@
 {
   "name": "auto-bind-inheritance",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Automatically bind methods to their class instance and walks through parent classes.",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,13 @@
     "extends"
   ],
   "author": "cwingrav",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwingrav/auto-bind-inheritance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cwingrav/auto-bind-inheritance/issues"
+  },
+  "homepage": "https://github.com/cwingrav/auto-bind-inheritance#readme"
 }
