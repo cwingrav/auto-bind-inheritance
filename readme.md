@@ -2,6 +2,8 @@
 
 > Automatically bind methods to their class instance and works on parent methods.
 
+> This package was created directly as a result of [failing on extended classes](https://github.com/sindresorhus/auto-bind/issues/5) in the [auto-bind](https://github.com/sindresorhus/auto-bind) package.
+
 
 ## Install
 
@@ -47,7 +49,7 @@ mb1();
 mb2();
 
 
-// With `autoBind(this)`, the above would have resulted in
+// With `autoBind(this)`, the above would have resulted in:
 //=> 'B.method1  B'
 //=> 'A.method2  B'
 //=> 'bound bound method1'
@@ -55,7 +57,7 @@ mb2();
 //=> 'B.method1  B'
 //=> 'exception "Cannot read property 'val' of undefined"'
 
-// With `autoBindI(this)`, the above would have resulted in
+// With `autoBindI(this)`, the above now correctly results in bound and callable methods:
 //=> 'B.method1  B'
 //=> 'A.method2  B'
 //=> 'bound method1'
