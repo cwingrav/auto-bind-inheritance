@@ -4,6 +4,11 @@
 
 > This package was created directly as a result of [failing on extended classes](https://github.com/sindresorhus/auto-bind/issues/5) in the [auto-bind](https://github.com/sindresorhus/auto-bind) package.
 
+There are issues with getters which are initialized in the constructor:
+ 1) initialize the getter/setter inside the getter/setter (not ideal)
+ 2) call autoBindI at end of final child (not ideal)
+ 3) manually call autoBindI
+ 4) avoid getter/setters
 
 ## Install
 
@@ -49,7 +54,7 @@ mb1();
 mb2();
 
 
-// With `autoBind(this)`, the above would have resulted in:
+// With `autoBind(this)`, the above could have resulted in:
 //=> 'B.method1  B'
 //=> 'A.method2  B'
 //=> 'bound bound method1'
