@@ -1,6 +1,6 @@
 {
   "name": "auto-bind-inheritance",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Automatically bind methods to their class instance and walks through parent classes.",
   "main": "index.js",
   "scripts": {
